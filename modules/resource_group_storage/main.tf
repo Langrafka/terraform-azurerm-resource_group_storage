@@ -1,7 +1,8 @@
+# main.tf (Всередині модуля: Langrafka/terraform-azurerm-resource_group_storage/modules/resource_group_storage/)
+
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location
-
   tags = {
     Environment = var.environment_tag
     Source      = "Terraform Module"
